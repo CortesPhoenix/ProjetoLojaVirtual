@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather Sans", sans-serif;   
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #ecf0f1;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    background-color: #58af9b;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+    left: 0%;
+}
+
+.content {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 960px;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.first-content {
+    display: flex;
+}
+
+.first-content .second-column {
+    z-index: 11;
+}
+
+.title {
+    font-size: 28px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.title-wh {
+   color: #fff;
+}
+
+.title-ca {
+    color: #58af9b;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 5px;
+    line-height: 2px;
+}
+
+.first-description {
+    color: white;
+    margin-top: 20px;
+}
+
+.second-description {
+    color: #7f8c8d;
+    margin-top: 20px;
+}
+
+.btn {
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 175px;
+    align-self: center;
+    transition: background-color 0.5s ;
+    margin-top: 1rem;
+}
+
+.first-btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin-top: 10px;
+}
+
+.first-btn:hover {
+    background-color: #fff;
+    color: #58af9b;
+}
+
+
+.second-btn {
+    background-color: #58af9b;
+}
+
+.second-btn:hover {
+    border: 1px solid #58af9b;
+    color: #58af9b;
+    
+}
+
+.first-column {
+    text-align: center;
+    width: 40%;    
+    z-index: 10;
+}
+
+.second-column {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-sm {
+    display: flex;
+    list-style-type: none;
+}
+
+.item-sm {
+    border: 1px solid #bdc3c7;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+
+.list-sm a:not(:first-child){
+    margin-left: 6px;
+}
+
+.list-sm a {
+    color: #95a5a6;
+}
+
+.list-sm a:hover .item-sm{
+    background-color: #58af9b;
+    color: #fff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    text-align: center;
+}
+
+.form input {
+    height: 45px;
+    border: none;
+    background-color: #ecf0f1;
+    margin: 4px;
+    width: 100%;
+}
+
+.label-input {
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 4px;
+}
+
+.icon-modify {
+    color: #7f8c8d;
+    padding: 0.5px;
+}
+
+/* Second Content */
+
+.second-content {
+    position: absolute;
+    display: flex;
+}
+
+.second-content .first-column {
+    order: 2;
+    z-index: -1;
+}
+
+.second-content .second-column {
+    order: 1;
+    z-index: -1;
+}
+
+.form a {
+    color: #34495e;
+    font-size: 14px;
+}
+
+.form a::first-letter {
+    text-transform: capitalize;
+} 
+
+.conectar-se-js .first-content .first-column, 
+.conectar-se-js .first-content .second-column {
+    z-index: -1;
+}
+
+ .conectar-se-js .second-content .second-column {
+    z-index: 11;
+}
+
+.conectar-se-js .second-content .first-column {
+    z-index: 13;
+}
+
+.conectar-se-js .content::before {
+    left: 60%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    animation: slidein  3s;
+    z-index: 12;
+}
+
+.registre-se-js .content::before {
+    animation: slideout 3s;
+    z-index: 12;
+}
+
+.registre-se-js .second-content .first-column, 
+.registre-se-js .second-content .second-column {
+    z-index: -1;
+}
+ 
+.registre-se-js .first-content .second-column {
+    z-index: 11;
+}
+
+.registre-se-js .first-content .first-column {
+    z-index: 13;
+}
+
+/* Deslocamento do conteúdo atrás do content::before */
+.conectar-se-js .first-content .second-column {
+    z-index: -1;
+    position: relative;
+    animation: deslocamentoEsq 3s;
+}
+
+.registre-se-js .second-content .second-column {
+    position: relative;
+    z-index: -1;
+    animation: deslocamentoDir 3s;
+}
+
+/* Animação do conteúdo */
+ @keyframes deslocamentoEsq {
+    from {
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+
+    25% {
+        left: -80px;
+        opacity: 0.5;
+    }
+
+    50% {
+        left: -100px;
+        opacity: 0.2;
+    }
+
+    to {
+        left: -110px;
+        opacity: 0;
+        z-index: -1;
+    }
+} 
+
+ @keyframes deslocamentoDir {
+    from {
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+
+    25% {
+        left: 80px;
+        opacity: 0.5;
+    }
+
+    50% {
+        left: 100px;
+        opacity: 0.2;
+    }
+
+    to {
+        left: 110px;
+        opacity: 0;
+        z-index: -1;
+    }
+} 
+
+/* Animação Principal*/
+
+@keyframes slidein {
+    from {
+        left: 0;
+        width: 40%;
+    }
+
+    25% {
+        left: 5%;
+        width: 50%;
+    }
+
+    50% {
+        left: 25%;
+        width: 60%;
+    }
+
+    75% {
+        left: 45%;
+        width: 50%;
+    }
+
+    to {
+        left: 60%;
+        width: 40%;
+    }
+}
+
+@keyframes slideout {
+    from {
+        left: 60%;
+        width: 40%;
+    }
+
+    25% {
+        left: 45%;
+        width: 50%;
+    }
+
+    50% {
+        left: 25%;
+        width: 60%;
+    }
+
+    75% {
+        left: 5%;
+        width: 50%;
+    }
+
+    to {
+        left: 0;
+        width: 40%;
+    }
+} 
+
