@@ -226,12 +226,12 @@
     border-bottom-right-radius: 15px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    animation: slidein  3s;
+    animation: slidein  2s;
     z-index: 12;
 }
 
 .registre-se-js .content::before {
-    animation: slideout 3s;
+    animation: slideout 2s;
     z-index: 12;
 }
 
@@ -252,13 +252,13 @@
 .conectar-se-js .first-content .second-column {
     z-index: -1;
     position: relative;
-    animation: deslocamentoEsq 3s;
+    animation: deslocamentoEsq 2s;
 }
 
 .registre-se-js .second-content .second-column {
     position: relative;
     z-index: -1;
-    animation: deslocamentoDir 3s;
+    animation: deslocamentoDir 2s;
 }
 
 /* Animação do conteúdo */
