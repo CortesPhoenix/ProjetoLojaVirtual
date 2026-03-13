@@ -174,10 +174,10 @@
     display: flex;
     align-items: center;
     margin: 4px;
+    box-sizing: border-box;
 }
 
 .label-input input {
-    box-sizing: border-box;
     padding-left: 1rem;
 }
 
