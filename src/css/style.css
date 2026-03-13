@@ -174,12 +174,12 @@
     display: flex;
     align-items: center;
     margin: 4px;
-    box-sizing: border-box;
+    gap: 1rem;
 }
 
-.label-input input {
+/* .label-input input {
     padding-left: 1rem;
-}
+} */
 
 .icon-modify {
     color: #7f8c8d;
